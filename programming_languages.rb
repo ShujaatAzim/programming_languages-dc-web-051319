@@ -7,6 +7,8 @@ def reformat_languages(languages)
           new_hash[key2][:style].push(key1)
         else
           new_hash[key2][:style] = [key1]
+        end
+    
     end
   end
   new_hash
