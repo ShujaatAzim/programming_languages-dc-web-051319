@@ -3,7 +3,7 @@ def reformat_languages(languages)
   languages.each do |key1, value1|
     value1.each do |key2, value2|
      new_hash[key2] = value2
-    if new_hash[key2][:style] == nil
+    if new_hash[key2][:style] == []
      new_hash[key2][:style] = []
    else
      new_hash[key2][:style].push(key1)
