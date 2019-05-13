@@ -4,13 +4,14 @@ def reformat_languages(languages)
     value1.each do |key2, value2|
      new_hash[key2] = value2
      new_hash[key2][:style] = []
+     new_hash[key2][:style].push(key1) 
     end
   end
-  languages.each do |key1, value1|
-    value1.each do |key2, value2|
-      new_hash[key2][:style].push(key1)
-    end
-  end
+  #languages.each do |key1, value1|
+  #  value1.each do |key2, value2|
+  #    new_hash[key2][:style].push(key1)
+  #  end
+  #end
   new_hash
 end
 
